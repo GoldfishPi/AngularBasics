@@ -1,5 +1,6 @@
+
 <div class="container-fluid">
-  <div class="jumbotron">
-    <h3 class="display-3">Server Component</h3>
+  <div class="jumbotron" [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online:serverStatus=='online'}">
+    <h3 class="display-3">{{'Server'}} with id {{serverId}} is {{getServerStatus()}}</h3>
   </div>
 </div>
